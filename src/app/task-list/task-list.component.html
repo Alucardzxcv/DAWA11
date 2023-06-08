@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let task of filteredTasks()" [class.completed]="taskStatus[task]">
+    <input type="checkbox" [(ngModel)]="taskStatus[task]">
+    <span>{{ task }}</span>
+  </li>
+</ul>
